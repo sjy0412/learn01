@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			
+			var arr = [25,10,31,34];
+//			默认情况下得sort是对字符编码,从小到大排序
+//			arr.sort();
+//			console.log(arr);
+//			ASCII a > 97
+			
+			function compare(a,b) {
+				return a-b;
+			}
+			arr.sort(compare);
+			console.log(arr);
+			
+			arr.sort(function(a,b){
+				return b - a
+			});
+			
+//			var arr = ['abc', 'ab','a','abcd','xy'];
+//			arr.sort(function(a,b){
+//				return a.length - b.length;
+//			});
+//			console.log(arr);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
